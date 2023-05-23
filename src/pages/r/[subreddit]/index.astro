@@ -1,0 +1,10 @@
+---
+import CreatePost from "../../../components/CreatePost.svelte";
+import Post from "../../../components/Post.svelte";
+let { subreddit } = Astro.params;
+---
+
+<h1>Subreddit: {subreddit}</h1>
+
+<CreatePost />
+<Post client:load path="./asd" />
